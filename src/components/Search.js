@@ -5,6 +5,8 @@ function Search({ search, setSearch }) {
     <div className="ui search">
       <div className="ui icon input">
         <input 
+        type='text'
+        id="search"
         onChange={(e) => {setSearch(e.target.value)}} 
         className="prompt"
         value={search}/>

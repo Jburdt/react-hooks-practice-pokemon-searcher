@@ -8,8 +8,8 @@ function PokemonPage({pokemon, setPokemon}) {
 
   const [search, setSearch] = useState('');
 
-  const filteredPoke = pokemon.filter((item) => {
-    return item.name.toLowerCase().includes(search.toLowerCase())
+  const filteredPoke = pokemon.filter((pokeObj) => {
+    return pokeObj.name.toLowerCase().includes(search.toLowerCase())
   })
   
   return (
